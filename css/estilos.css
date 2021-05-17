@@ -378,3 +378,15 @@ footer {
         font-size: 20x;
     }
 }
+/* [href]{
+    background-color: #000000;
+} */
+[href^="hola"]{ /* Da formato con lo que contenga hola ap principio */
+    color: #000000;
+}
+[href$="hola"]{ /* Da formato con lo que contenga hola ap final */
+    color: #000000;
+}
+[href*="hola"]{ /* Da formato con lo que contenga hola */
+    color: #000000;
+}
