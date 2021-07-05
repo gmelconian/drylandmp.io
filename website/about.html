@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/layout.css">
     <title>Acerca de nosotros.</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -26,5 +28,44 @@
                     style="stroke: none; fill: #fff;"></path>
             </svg></div>
     </header>
+
+    <br><br>
+    <div class="uso_prompt">
+        <script>
+
+            var nombre = prompt("Introduzca su nombre");
+
+            var apellido = "Melconian";
+
+            document.write("<h1>");
+            document.write(nombre + " " + apellido);
+            document.write("</h1>");
+
+        </script>
+
+    </div>
+    <div class="uso_arrays">
+
+        <script>
+            var persona = ["Gabriel", "Melconian", 29];
+            var articulos = new Array("Champion", "Mesa", "Silla");
+
+            articulos.unshift("Pelota"); //Agrega un articulo al principio del array
+
+            articulos.push("Toga");//Agrega un articulo al final del array
+
+            for (let index = 0; index < articulos.length; index++) {
+                const element = articulos[index];
+                document.write("<p>El elemento numero " + (index + 1) + " es: <b> " + element + "</b></p>");
+                document.write("<br>")
+            }
+
+
+        </script>
+
+
+    </div>
+
 </body>
+
 </html>
